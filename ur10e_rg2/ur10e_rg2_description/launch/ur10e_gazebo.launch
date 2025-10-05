@@ -1,0 +1,14 @@
+<launch>
+    <!-- Launch Gazebo -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+
+    <!-- Load robot description from URDF -->
+    <param name="robot_description" textfile="$(find ur10e_rg2)/ur10e_rg2_description/ur10e_rg2.urdf" />
+
+
+    <!-- Spawn robot in Gazebo -->
+    <node name="spawn_ur10e" pkg="gazebo_ros" type="spawn_model" output="screen"
+          args="-param robot_description -urdf -model ur10e_rg2" />
+
+</launch>
+

@@ -1,0 +1,50 @@
+arm_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - robot_shoulder_pan_joint
+    - robot_shoulder_lift_joint
+    - robot_elbow_joint
+    - robot_wrist_1_joint
+    - robot_wrist_2_joint
+    - robot_wrist_3_joint
+  gains:
+    robot_shoulder_pan_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    robot_shoulder_lift_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    robot_elbow_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    robot_wrist_1_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    robot_wrist_2_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    robot_wrist_3_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+gripper_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - gripper_finger_joint
+  gains:
+    gripper_finger_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
