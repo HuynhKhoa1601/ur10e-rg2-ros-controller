@@ -1,0 +1,25 @@
+header:
+  frame_id: 'robot_base_link'
+ns: 'debug'
+id: 0
+type: 2
+action: 0
+pose:
+  position:
+    x: -0.157
+    y: -0.21
+    z: 0.09
+  orientation:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+scale:
+  x: 0.2
+  y: 0.2
+  z: 0.2
+color:
+  r: 1.0
+  g: 0.0
+  b: 0.0
+  a: 1.0

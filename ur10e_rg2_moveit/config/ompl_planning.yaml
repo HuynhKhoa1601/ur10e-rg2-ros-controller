@@ -1,3 +1,6 @@
+workspace_parameters:
+  min_bounds: [-1.0, -1.0, -0.2]   # allow planning down to -0.2 m (20 cm below base)
+  max_bounds: [ 1.0,  1.0,  1.2]   # keep a reasonable top bound
 planner_configs:
   AnytimePathShortening:
     type: geometric::AnytimePathShortening
