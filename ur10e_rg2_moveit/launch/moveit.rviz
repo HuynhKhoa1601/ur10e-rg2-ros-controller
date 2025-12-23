@@ -331,7 +331,7 @@ Visualization Manager:
       Marker Topic: /placement_debug_marker
       Name: Marker
       Namespaces:
-        placement: true
+        {}
       Queue Size: 100
       Value: true
   Enabled: true
@@ -366,9 +366,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6050000190734863
+      Pitch: 1.3547965288162231
       Target Frame: world
-      Yaw: 3.131787061691284
+      Yaw: 3.1917741298675537
     Saved: ~
 Window Geometry:
   Displays:

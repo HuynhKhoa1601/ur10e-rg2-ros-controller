@@ -174,6 +174,8 @@ def collision_object_callback(msg: CollisionObject):
         return
 
     rospy.loginfo(f"[collision_object_callback] Received CollisionObject: id={msg.id}, frame={msg.header.frame_id}")
+    
+ 
 
     for i, pose in enumerate(msg.primitive_poses):
         # Reconstruct PoseStamped
@@ -204,7 +206,6 @@ def collision_object_callback(msg: CollisionObject):
 
     rospy.loginfo(f"[collision_object_callback] Processed CollisionObject: {msg.id}")
 
-
 def main():
     global planning_scene
 
@@ -224,6 +225,7 @@ def main():
 
     # Subscribe to Unity’s table/obstacle topic
     rospy.Subscriber("/collision_object", CollisionObject, collision_object_callback)
+
     rospy.loginfo("[mover_service_node] Subscribed to /collision_object for Unity obstacles")
 
     rospy.spin()
