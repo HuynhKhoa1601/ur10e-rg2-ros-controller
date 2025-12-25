@@ -1,6 +1,6 @@
-# Request
-sensor_msgs/Image image
-
+geometry_msgs/Pose pick_pose
+geometry_msgs/Pose place_pose
 ---
-# Response
-geometry_msgs/Pose estimated_pose
+bool success
+string message
+
